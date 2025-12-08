@@ -1,0 +1,304 @@
+/* ===== CSS RESET - СБРОС ВСЕХ СТИЛЕЙ ===== */
+
+/* Убираем все отступы и границы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Сброс для HTML и Body */
+html, body {
+    height: 100%;
+    font-size: 100%;
+    line-height: 1;
+}
+
+/* Убираем стили списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Сброс для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Сброс для кнопок */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    background: none;
+}
+
+/* Сброс для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Сброс для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Сброс для таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    background: #E1EDE6;
+}
+
+.nav {
+    position: relative;
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 143px;
+    height: 35px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.logo a {    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #598D66;
+}
+
+.nav-menu {
+    position: absolute;
+    right: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    width: 470px;
+    height: 24px;
+}
+
+.nav-menu a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2C2D35;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a:hover {
+    color: #598D66;
+}
+
+.cart-button {
+    position: absolute;
+    right: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.cart-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero Section */
+.container {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 165px;
+    gap: 30px;
+}
+
+.container-img {
+    width: 540px;
+    height: 621px;
+    flex-shrink: 0;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Отражение по горизонтали */
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 540px;
+    height: 331px;
+}
+
+.container-info h1 {
+    width: 540px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    color: #2C2D35;
+}
+
+.container-info h1 .green-text {
+    color: #598D66;
+}
+
+.container-info p {
+    width: 540px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #86928B;
+}
+
+.primary-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    width: 225px;
+    height: 65px;
+    border: 1px solid #598D66;
+    cursor: pointer;
+    background: transparent;
+}
+
+.primary-btn:hover {
+    background: #598D66;
+}
+
+.primary-btn:hover span {
+    color: #FFFFFF;
+}
+
+.primary-btn span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #598D66;
+}
+
+.catalog{
+position: relative;
+width: 1100px;
+margin: auto;
+margin-top: 70px;
+}
+
+.catalog-header{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.catalog-title h1 {
+    width: 255px;
+    height: 44px;
+    color: #2C2D35;
+    margin: 0;
+}
+
+.catalog-lang{
+    display: flex;
+}
+
+.lang-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 428px;
+    height: 43px;
+    list-style: none;
+}
+
+.lang-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: 43px;
+    background: #D4E8D9;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2C2D35;
+    cursor: pointer;
+}
+
+.lang-list li:first-child {
+    background: #376B44;
+    color: #F4F6F5;
+}
+
+.lang-list li:hover {
+    background: #376B44;
+    color: #F4F6F5;
+}
