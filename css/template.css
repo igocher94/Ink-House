@@ -232,14 +232,14 @@ body {
 }
 
 .catalog{
-position: relative;
-width: 1100px;
-margin: auto;
-margin-top: 70px;
+    position: relative;
+    width: 1110px;
+    margin: auto;
+    margin-top: 70px;
 }
 
 .catalog-header{
-    width: 1100px;
+    width: 1110px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -300,5 +300,132 @@ margin-top: 70px;
 
 .lang-list li:hover {
     background: #376B44;
+    color: #F4F6F5;
+}
+
+
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 730px;
+    background: #E1EDE6;
+    flex: none;
+}
+
+.card-img{
+    position: absolute;
+    height: 422px;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.catalog-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Автор картины */
+.card-author {
+    position: absolute;
+    width: 133px;
+    height: 21px;
+    left: 20px;
+    top: 462px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86928B;
+}
+
+/* Название картины */
+.card-title {
+    position: absolute;
+    width: 310px;
+    height: 35px;
+    left: 20px;
+    top: 493px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2C2D35;
+    margin: 0;
+}
+
+/* Материал и размер */
+.card-material {
+    position: absolute;
+    height: 21px;
+    left: 20px;
+    right: 20px;
+    top: 536px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2C2D35;
+}
+
+/* Цена */
+.card-price {
+    position: absolute;
+    width: 122px;
+    height: 28px;
+    left: 20px;
+    bottom: 115px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #598D66;
+}
+
+/* Кнопка в корзину */
+.secondary-btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+    border: 1px solid #598D66;
+    background: transparent;
+    cursor: pointer;
+}
+
+.secondary-btn span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #598D66;
+}
+
+.secondary-btn:hover {
+    background: #598D66;
+}
+
+.secondary-btn:hover span {
     color: #F4F6F5;
 }
