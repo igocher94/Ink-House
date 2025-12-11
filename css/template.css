@@ -429,3 +429,139 @@ body {
 .secondary-btn:hover span {
     color: #F4F6F5;
 }
+
+.promo{
+    position: relative;
+    margin: 70px auto 0;
+    width: 1440px;
+    height: 574px;
+    overflow: hidden;
+}
+
+.ad-img{
+    position: absolute;
+    width: 1440px;
+    height: 574px;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+/* Размытый синий overlay */
+.promo::before {
+    content: '';
+    position: absolute;
+    width: 1004px;
+    height: 687px;
+    left: -238px;
+    top: -57px;
+    background: rgba(13, 43, 67, 0.8);
+    mix-blend-mode: multiply;
+    filter: blur(157.5px);
+    z-index: 1;
+}
+
+/* Soft-light overlay */
+.promo::after {
+    content: '';
+    position: absolute;
+    width: 1440px;
+    height: 574px;
+    left: 0px;
+    top: 0px;
+    background: url('../img/background.png');
+    background-size: cover;
+    mix-blend-mode: soft-light;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+
+/* Header with star and title */
+.promo-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 521px;
+    height: 80px;
+    left: 165px;
+    top: 70px;
+    z-index: 2;
+}
+
+/* Star icon */
+.promo-star {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    flex: none;
+    background-image: url('../img/Star 2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Title */
+.promo-title {
+    width: 421px;
+    height: 80px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    color: #F4F6F5;
+    flex: none;
+    margin: 0;
+}
+
+/* Description text */
+.promo-text {
+    position: absolute;
+    width: 540px;
+    height: 209px;
+    left: 165px;
+    top: 170px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Promo button */
+.promo-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    position: absolute;
+    width: 257px;
+    height: 65px;
+    left: 165px;
+    top: 439px;
+    background: #EEDB6D;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.promo-btn span {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2C2D35;
+}
+
+.promo-btn:hover {
+    background: #E5D25E;
+}
+
