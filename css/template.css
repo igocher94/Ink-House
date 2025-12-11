@@ -565,3 +565,329 @@ body {
     background: #E5D25E;
 }
 
+/* Team Section */
+
+/* Frame 256 */
+.team-catalogue{
+    position: relative;
+    width: 1110px;
+    height: 440px;
+    margin: 70px auto 0;
+}
+
+/* Group 210 */
+.team-picture{
+    position: relative;
+    width: 445px;
+    height: 440px;
+}
+
+/* 59a6e3f6621f515e33ea7a82 1 */
+.team-img {
+    position: absolute;
+    width: 361px;
+    height: 445px;
+    left: 0px;
+    bottom: 320px;
+    object-fit: cover;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+}
+
+/* Layer 1 1 */
+.team-img-brush {
+    position: absolute;
+    width: 269px;
+    height: 397px;
+    left: 48px;
+    bottom: 2px;
+    object-fit: cover;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* Frame 255 */
+.team-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 635px;
+    left: 475px;
+    top: 124px;
+}
+
+/* Frame 253 */
+.team-info h1,
+.team-info p {
+    width: 635px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Наша команда */
+.team-info h1 {
+    height: 44px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    color: #2C2D35;
+    margin: 0;
+}
+
+/* Текст */
+.team-info p {
+    height: 108px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2C2D35;
+    margin: 0;
+}
+
+/* Frame 254 */
+.team-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 300px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Ellipse 30, 31, 32 */
+.team-avatar div {
+    width: 80px;
+    height: 80px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    flex: none;
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.team-avatar div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Section */
+/* Footer Section */
+
+.footer{
+    position: relative;
+    width: 1440px;
+    height: 168px;
+    margin: 140px auto 0;
+    background: #E1EDE6;
+}
+
+/* Frame 85 - Logo */
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 35px;
+    left: 165px;
+    top: 23px;
+}
+
+.footer-icon img {
+    width: 35px;
+    height: 35px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-icon a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #598D66;
+    text-decoration: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Frame 257 - Contact Info */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 170px;
+    height: 52px;
+    left: 165px;
+    top: 93px;
+}
+
+/* +7 (999) 543-54-54 */
+.footer-phone {
+    width: 170px;
+    height: 23px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2C2D35;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Мастерская */
+.footer-workshop {
+    width: 104px;
+    height: 21px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86928B;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Frame 134 - Main Navigation */
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    position: absolute;
+    width: 445px;
+    height: 122px;
+    right: 545px;
+    top: 23px;
+}
+
+/* Frame 259, 260, 261 - Columns */
+.footer-country,
+.footer-updates,
+.footer-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+}
+
+.footer-country {
+    width: 128px;
+    height: 122px;
+}
+
+.footer-updates,
+.footer-jobs {
+    width: 108px;
+    height: 89px;
+}
+
+.footer-country ul,
+.footer-updates ul,
+.footer-jobs ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-country li:first-child,
+.footer-updates li:first-child,
+.footer-jobs li:first-child {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2C2D35;
+}
+
+.footer-country li,
+.footer-updates li,
+.footer-jobs li {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #86928B;
+}
+
+/* Frame 263 - Social & Rights */
+.footer-social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    width: 132px;
+    height: 68px;
+    left: 1143px;
+    top: 23px;
+}
+
+/* Frame 258 - Social Icons */
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 132px;
+    height: 24px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    flex-grow: 0;
+}
+
+/* Frame 262 - Rights */
+.footer-rights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    width: 132px;
+    height: 34px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: #86928B;
+}
+
+
